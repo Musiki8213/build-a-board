@@ -1,0 +1,113 @@
+#flex-img1{
+    display: flex;
+}
+#flex-img2{
+    display: flex;
+}
+#powerImg{
+width: 10%;
+height: 10%;
+}
+
+ #cpuImg{
+width: 8.5%;
+height: 10%;
+        }
+
+#ramImg{
+width: 10%;
+height: 10%;
+       }
+
+ #romImg{
+width: 10%;
+height: 10%;
+       }
+
+ #cmosImg{
+    width: 7.5%;
+height: 10%;
+
+       }
+
+#storageImg{
+    width: 8%;
+height: 10%;
+
+        }
+
+#flex1{
+    display: flex;
+    background-color: rgb(12, 12, 87);
+    color: azure;
+    gap: 10px;
+    
+} 
+
+#powerDiv{
+    background-color: rgb(160, 110, 207);
+    padding: 50px;
+}
+#cpuDiv{
+    background-color: rgb(221, 140, 18);
+    padding: 50px;
+}
+#ramDiv{
+    background-color: rgb(18, 221, 143);
+    padding: 50px;
+}
+#romDiv{
+    background-color: rgb(107, 76, 245);
+    padding: 50px;
+}
+#cmosDiv{
+    background-color: rgb(221, 18, 86);
+    padding: 50px;
+}
+#storageDiv{
+    background-color: rgb(49, 23, 32);
+    padding: 50px;
+}
+#javaPower{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    background-color: rgb(8, 8, 8);
+}
+#javaCPU{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    background-color: rgb(8, 8, 8);
+}
+#javaRam{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    background-color: rgb(8, 8, 8);
+}
+#javaRom{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    background-color: rgb(8, 8, 8);
+}
+#javaCmos{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    background-color: rgb(8, 8, 8);
+}
+
+#javaHdd{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    background-color: rgb(8, 8, 8);
+}
