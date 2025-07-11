@@ -1,113 +1,236 @@
-#flex-img1{
-    display: flex;
-}
-#flex-img2{
-    display: flex;
-}
+
 #powerImg{
-width: 10%;
-height: 10%;
+width: 50%;
+height: 50%;
 }
 
  #cpuImg{
-width: 8.5%;
-height: 10%;
+width: 50%;
+height: 50%;
         }
 
 #ramImg{
-width: 10%;
-height: 10%;
+width: 50%;
+height: 50%;
        }
 
  #romImg{
-width: 10%;
-height: 10%;
+width: 50%;
+height: 50%;
        }
 
  #cmosImg{
-    width: 7.5%;
-height: 10%;
+width: 40%;
+height: 30%;
 
        }
 
 #storageImg{
-    width: 8%;
-height: 10%;
+width: 34%;
+height: 30%;
 
         }
 
-#flex1{
-    display: flex;
-    background-color: rgb(12, 12, 87);
-    color: azure;
-    gap: 10px;
+#grid1{
+  display:  grid; 
+  grid-template-columns: 1fr 1.2fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  width: 1000PX;
+  justify-content: center;
+  color: rgb(230, 230, 230); 
+  border-radius: 20px;
+  background-image: url('assets/background2\ \(2\).png');
+  
     
 } 
 
-#powerDiv{
-    background-color: rgb(160, 110, 207);
-    padding: 50px;
-}
-#cpuDiv{
-    background-color: rgb(221, 140, 18);
-    padding: 50px;
-}
-#ramDiv{
-    background-color: rgb(18, 221, 143);
-    padding: 50px;
-}
-#romDiv{
-    background-color: rgb(107, 76, 245);
-    padding: 50px;
-}
-#cmosDiv{
-    background-color: rgb(221, 18, 86);
-    padding: 50px;
-}
-#storageDiv{
-    background-color: rgb(49, 23, 32);
-    padding: 50px;
-}
-#javaPower{
-    display: none;
-    position: fixed;
-    z-index: 1;
-    overflow: auto;
-    background-color: rgb(8, 8, 8);
-}
-#javaCPU{
-    display: none;
-    position: fixed;
-    z-index: 1;
-    overflow: auto;
-    background-color: rgb(8, 8, 8);
-}
-#javaRam{
-    display: none;
-    position: fixed;
-    z-index: 1;
-    overflow: auto;
-    background-color: rgb(8, 8, 8);
-}
-#javaRom{
-    display: none;
-    position: fixed;
-    z-index: 1;
-    overflow: auto;
-    background-color: rgb(8, 8, 8);
-}
-#javaCmos{
-    display: none;
-    position: fixed;
-    z-index: 1;
-    overflow: auto;
-    background-color: rgb(8, 8, 8);
+#powerDiv:hover ,
+#cpuDiv:hover ,
+#ramDiv:hover ,
+#romDiv:hover ,
+#cmosDiv:hover ,
+#storageDiv:hover {
+  background-color: #00e1ff; 
+  
 }
 
-#javaHdd{
+body{
+    background-image: url('assets/background.png');
+}
+#powerDiv{
+     grid-column: 1 / 2; 
+     grid-row: 1 / 2;
+     border: 2px solid rgb(44, 93, 156); 
+     border-radius: 10px;
+     cursor: pointer;
+    }
+
+
+
+#romDiv{ grid-column: 1 / 2; 
+    grid-row: 2 / 3;
+     border: 2px solid rgb(44, 93, 156); 
+     border-radius: 10px; 
+     cursor: pointer;
+    }
+
+#cmosDiv{ grid-column: 1 / 2;
+     grid-row: 3 / 4;
+     border: 2px solid rgb(44, 93, 156); 
+     border-radius: 10px;
+     cursor: pointer;
+     }
+
+
+#cpuDiv { 
+    grid-column: 2 / 3;
+     grid-row: 1 / 3; 
+     border: 2px solid rgb(44, 93, 156); 
+     border-radius: 10px;
+     cursor: pointer;
+     display: flex;
+  justify-content: center;   
+  align-items: center;       
+  text-align: center; 
+     }
+
+#storageDiv{ 
+    grid-column: 2 / 3; 
+    grid-row: 3 / 4; 
+     border: 2px solid rgb(44, 93, 156); 
+     border-radius: 10px;
+     cursor: pointer;
+ }
+
+
+#ramDiv{ 
+  grid-column: 3 / 4; 
+  grid-row: 1 / 4; 
+     border: 2px solid rgb(44, 93, 156); 
+     border-radius: 10px;
+     cursor: pointer;
+     display: flex;
+  justify-content: center;   
+  align-items: center;       
+  text-align: center; 
+}
+
+
+#powerDiv{
+    background-color:#a3d1ff;
+    padding: 40px;
+    text-align: center;
+    justify-content: center;
+}
+#cpuDiv{
+    background-color: #a3d1ff;
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
+    
+}
+#ramDiv{
+    background-color: #a3d1ff;
+    padding: 50px;
+    text-align: center;
+}
+#romDiv{
+    background-color: #a3d1ff;
+    padding: 50px;
+    text-align: center;
+}
+#cmosDiv{
+    background-color: #a3d1ff;
+    padding: 50px;
+    text-align: center;
+}
+#storageDiv{
+    background-color: #a3d1ff;
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/*============================================*/
+#javaPower,
+#javaCPU,
+#javaRam,
+#javaRom,
+#javaCmos,#javaHdd{
     display: none;
     position: fixed;
     z-index: 1;
-    overflow: auto;
-    background-color: rgb(8, 8, 8);
+    background-color: #142d41;
+    width: 600px;
+    height: 400px;
+    border-radius: 50px;
+     top: 20%;
+    left: 35%;
+    
+}
+span{
+    font-size: 60px;
+    cursor: pointer;
+   padding-left: 500px;
+
+}
+span:hover{
+   color: #38aadf; 
+}
+
+
+h1{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    color: #ffffff;
+    font-style: italic;
+    font-size: xx-large;
+    
+}
+
+/*bios*/
+#toggleView {
+  position: fixed;
+  top: 50px;
+  right: 122px;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 20px;
+  border: 2px solid #00e1ff; ;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: lightgray;
+  background-color: #06142b;
+  cursor: pointer;
+}
+
+#biosView {
+    display: none;
+    background-color: #061835;
+    color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 40px;
+    height: 750px;
+}
+
+.bios-screen ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  overflow: auto;
+  background-color: rgb(8, 8, 8);
+}
+#f10{
+    color: yellow;
+
 }
