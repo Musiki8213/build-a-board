@@ -234,3 +234,98 @@ h1{
     color: yellow;
 
 }
+
+@media (min-width: 1200px) {
+    #powerImg, #cpuImg, #ramImg, #romImg {
+        width: 50%;
+        height: 50%;
+    }
+    #cmosImg {
+        width: 40%;
+        height: 30%;
+    }
+    #storageImg {
+        width: 34%;
+        height: 30%;
+    }
+}
+
+
+@media (max-width: 1199px) {
+    #grid1 {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        padding: 15px;
+        width: 90%;
+    }
+    #powerImg, #cpuImg, #ramImg, #romImg {
+        width: 45%;
+        height: 45%;
+    }
+    #cmosImg {
+        width: 35%;
+        height: 25%;
+    }
+    #storageImg {
+        width: 30%;
+        height: 25%;
+    }
+}
+
+
+@media (max-width: 991px) {
+    #grid1 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        padding: 10px;
+        width: 95%;
+    }
+    #powerImg, #cpuImg, #ramImg, #romImg {
+        width: 40%;
+        height: 40%;
+    }
+    #cmosImg, #storageImg {
+        width: 30%;
+        height: 20%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    #grid1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        gap: 10px;
+        padding: 10px;
+        width: 100%;
+    }
+    #powerImg, #cpuImg, #ramImg, #romImg, #cmosImg, #storageImg {
+        width: 70%;
+        height: auto;
+    }
+    #powerDiv, #cpuDiv, #ramDiv, #romDiv, #cmosDiv, #storageDiv {
+        padding: 30px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    #grid1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        gap: 8px;
+        padding: 5px;
+        width: 100%;
+    }
+    #powerImg, #cpuImg, #ramImg, #romImg, #cmosImg, #storageImg {
+        width: 80%;
+        height: auto;
+    }
+    #powerDiv, #cpuDiv, #ramDiv, #romDiv, #cmosDiv, #storageDiv {
+        padding: 20px;
+    }
+    h1 {
+        font-size: large;
+    }
+}
